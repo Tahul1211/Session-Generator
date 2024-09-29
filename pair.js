@@ -54,11 +54,11 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: 'SIGMA-MD;;;' + b64data });
+               let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: 'RAHUL-MD~' + b64data });
 
                let SIGMA_MD_TEXT = `
-*_Pair Code By Maher Zubair_*
-*_Made With 🤍_*
+*_QR CODE BY RAHUL DEBNATH_*
+*_MADE WITH ☠️_*
 
 _Don't Forget To Give Star To My Repo_`
  await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
